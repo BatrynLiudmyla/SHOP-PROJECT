@@ -4,13 +4,20 @@ import ReactDOM from 'react-dom/client'
 
 // jsx
 
-const h1 = <h1 id="title">Hello React, js</h1>
+const h1 = (
+    <h1 id="title" className="gfgfgf">
+        Hello React, js
+    </h1>
+)
 console.log(h1)
+
+let a = 10
+let b = `Hello test`
 
 const list = (
     <ul>
-        <li>list Item 1</li>
-        <li>list Item 2</li>
+        <li>list Item {a + 10 + 10}</li>
+        <li>list Item {b}</li>
         <li>list Item 3</li>
     </ul>
 )
