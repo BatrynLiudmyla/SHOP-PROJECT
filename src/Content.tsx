@@ -3,7 +3,7 @@ type ContentProps = {
   text2: string
   year: number
 }
-    const Content = (props: ContentProps) => {
+    export const Content = (props: ContentProps) => {
       return (
           <>
               <p>{props.text1}</p>
@@ -15,4 +15,4 @@ type ContentProps = {
   
 
 
-export default Content
+// export default Content
