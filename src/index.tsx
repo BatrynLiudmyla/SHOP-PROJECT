@@ -3,15 +3,8 @@ import { title } from 'process'
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import {Content} from './Content'
+import Title from './Title'
 
-interface ITitleProps {
-    text: string
-}
-
-const Title = (props: ITitleProps) => {
-    console.log(props)
-    return <h1>Hello {props.text}</h1>
-}
 
 function App() {
     return (
