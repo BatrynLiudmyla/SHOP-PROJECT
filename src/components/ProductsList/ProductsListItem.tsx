@@ -1,4 +1,6 @@
-import {Button,Card,CardActions,CardContent,TextField,} from '@mui/material'
+import {Button,Card,CardActions,CardContent,TextField,}
+from '@mui/material'
+import { Component, ReactNode } from 'react'
 import './ProductsListItem.scss'
 
 
@@ -11,25 +13,19 @@ type Props = {
   image: string
 }
 
-const ProductsListItem = ({
-  title,
-  description,
-  type,
-  capacity,
-  price,
-  image
-}: Props) => {
+class ProductsListItem extends Component <Props> {
+render() {
     return (
         <Card variant="outlined" className='product'>
             <CardContent>
                 <div className="product-image">
-                    <img src={image} alt="" />
+                    <img src={this.props.image} alt="" />
                 </div>
-                <div className="product-title">{title}</div>
-                <div className="product-desc"> {description}</div>
-                <div className="product-features"> Type: {type}</div>
-                <div className="product-features">Capacity:{capacity} Gb </div>
-                <div className="product-price">{price} $ </div>
+                <div className="product-title">{this.props.title}</div>
+                <div className="product-desc"> {this.props.description}</div>
+                <div className="product-features"> Type: {this.props.type}</div>
+                <div className="product-features">Capacity:{this.props.capacity} Gb </div>
+                <div className="product-price">{this.props.price} $ </div>
                 <div className='product-quantity'>
                     <Button variant="outlined">-</Button>
                     <TextField size="small" value="1"/>
@@ -41,6 +37,18 @@ const ProductsListItem = ({
             </CardActions>
         </Card>
     )
+  }
 }
+
+// const ProductsListItem = ({
+//   title,
+//   description,
+//   type,
+//   capacity,
+//   price,
+//   image
+// }: Props) => {
+    
+// }
 
 export default ProductsListItem
