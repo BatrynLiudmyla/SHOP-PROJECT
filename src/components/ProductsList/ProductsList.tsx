@@ -1,7 +1,7 @@
 import { Grid, Typography } from '@mui/material'
 import ProductsListItem from './ProductsListItem'
 import productsArray from 'utils/productsArray'
-import { type } from 'os'
+
 
 type Props = {}
 

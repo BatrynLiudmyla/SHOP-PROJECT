@@ -27,7 +27,7 @@ const ProductsListItem = ({
                 <div className="product-price">{price} $ </div>
             </CardContent>
             <CardActions className='product-btn-wrap'>
-                <Button>Add to cart</Button>
+                <Button variant="outlined">Add to cart</Button>
             </CardActions>
         </Card>
     )
