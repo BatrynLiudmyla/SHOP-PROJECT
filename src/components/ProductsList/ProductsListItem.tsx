@@ -1,6 +1,6 @@
 import {Button,Card,CardActions,CardContent,TextField,}
 from '@mui/material'
-import { Component, ReactNode } from 'react'
+import { Component } from 'react'
 import './ProductsListItem.scss'
 
 
@@ -13,7 +13,7 @@ type Props = {
   image: string
 }
 
-class ProductsListItem extends Component <Props> {
+class ProductsListItem extends Component<Props> {
 render() {
     const {
         title,
@@ -26,16 +26,16 @@ render() {
         <Card variant="outlined" className='product'>
             <CardContent>
                 <div className="product-image">
-                    <img src={this.props.image} alt="" />
+                    <img src={image} alt="" />
                 </div>
                 <div className="product-title">{title}</div>
                 <div className="product-desc"> {description}</div>
                 <div className="product-features"> Type: {type}</div>
-                <div className="product-features">Capacity:{capacity} Gb </div>
-                <div className="product-price">{price} $ </div>
+                <div className="product-features">Capacity:{capacity}Gb</div>
+                <div className="product-price">{price}$</div>
                 <div className='product-quantity'>
                     <Button variant="outlined">-</Button>
-                    <TextField size="small" value="1"/>
+                    <TextField size="small"value="1"/>
                     <Button variant="outlined">+</Button>
                 </div>
             </CardContent>
