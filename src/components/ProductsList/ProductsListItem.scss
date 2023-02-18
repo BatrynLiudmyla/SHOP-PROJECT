@@ -30,9 +30,10 @@
 .product-image {
     text-align: center;
     margin-bottom: 20px;
+    height: 250px;
     img {
         width: 150px;
-        height: auto;
+        height: 200px;
     }
 }
 
@@ -42,4 +43,11 @@
     input {
         text-align: center;
     }
+}
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
 }
