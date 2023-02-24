@@ -27,7 +27,8 @@ const ProductsList = ({addProductToCart}: Props) => {
                     image,
                     }) => (
                         <Grid item xs={12} sm={6} md={4} key={id}>
-                            <ProductsListItem                                
+                            <ProductsListItem    
+                                id = {id}                 
                                 title={title}
                                 description={description}
                                 type={type}
