@@ -1,7 +1,23 @@
-type Props = {}
-const CartPage = (props: Props) => {
+import CartProductList from 'components/CartProductList/CartProductList'
+import CartTotal from 'components/CartTotal/CartTotal'
+
+type Props = {
+    productsInCart: {
+        [id: number]: number
+    }
+
+     }
+
+
+const CartPage = ({
+  productsInCart}: Props) => {
   return (
-    <div>CartPage</div>
-  )
-}
+  <div>
+   <CartProductList productsInCart={productsInCart}/>
+    <CartTotal productsInCart={productsInCart}/>
+
+    </div>
+     
+        )       
+   }
 export default CartPage
